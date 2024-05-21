@@ -15,7 +15,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSortModule } from '@angular/material/sort';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { RegisterComponent } from './register/register.component';
@@ -55,6 +55,7 @@ import { PublisherComponent } from './publisher/publisher.component';
     MatTableModule,
     MatPaginatorModule,
     MatExpansionModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,1 +1,13 @@
-<h1>About Works!</h1>
+<form class="about-form" #aboutForm="ngForm">
+    <mat-form-field>
+      <input matInput placeholder="Full Name" name="fullName" ngModel required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Email" type="email" name="email" ngModel required>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput placeholder="Address" name="address" ngModel required></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="primary">Save</button>
+  </form>
+  

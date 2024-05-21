@@ -1,1 +1,18 @@
-<h1>login works!</h1>
+<form class="login-form" #loginForm="ngForm">
+  <mat-form-field>
+    <input matInput placeholder="Username" name="username" ngModel required />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      type="password"
+      placeholder="Password"
+      name="password"
+      ngModel
+      required
+    />
+  </mat-form-field>
+  <button mat-raised-button color="primary" [disabled]="!loginForm.form.valid">
+    Login
+  </button>
+</form>
